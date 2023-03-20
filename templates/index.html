@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sri Indu Form</title>
 </head>
-<body>
-    <div class="">
-        <form action="/update" method="post">
-            <label for="Firstname" id="Firstname" class="">First Name</label>
-            <input type="text" name="Firstname" id="firstname">
-            <label for="lastname" id="lastname" class="">Last Name</label>
-            <input type="text" name="lastname" id="lastname">
-            <label for="Dob" id="Dob" class="">Date of birth</label>
-            <input type="date" name="Dob" id="Dob">
-            <label for="father" id="father" class="">father Name</label>
-            <input type="text" name="father" id="firstname">
-            <label for="mother" id="mother" class="">Mother Name</label>
-            <input type="text" name="mother" id="lastname">
-            <label for="Rollno" id="Rollno" name="Rollno" class="">Roll No</label>
-            <input type="text" name="Rollno" id="Rollno">
-            <label for="email" id="email" name="email" class="">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="phno" id="phno">Phone Number</label>
-            <input type="number" name="phno" id="phno">
-            <label for="gender" id="gender" class="">Gender</label>
-            <input type="radio" name="gender" id="gender">Male
-            <input type="radio" name="gender" id="gender">Female
-            <input type="radio" name="gender" id="gender">Other
-            <label for="branch" id="branch">branch</label>
-            <input type="text" id="branch">
-            <label for="year" id="year">Year</label>
-            <input type="number" id="year">
-            <label for="clgcode" id="clgcode">College Code</label>
-            <input type="text" id="clgcode">
-            <label for="instructions">here by i understand the above given data is correct to my knowlege and i will accept any nessesary consequences if the data present data to be found untruthful</label>
-            <input type="checkbox" name="instructions" id="instructions">
-            <input type="submit" value="submit">
-        </form>
+
+<body class="w-full h-full overflow-visible bg-gray-900">
+    <div class="py-10">
+        <div class="rounded-lg w-3/5 bg-gray-300 justify-self-center mx-auto px-3 bg-opacity-80 shadow-md rounded-lg text-left">
+                <span class="flex text-center justify-center mx-auto text-3xl py-3">Registration Form</span>
+                <form action="/create" method="post" class="flex flex-col py-10">
+                    <label for="Firstname" id="Firstname" class="py-3">First Name</label>
+                    <input type="text" name="Firstname" id="firstname" class="rounded-lg">
+                    <label for="lastname" id="lastname" class="py-3">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="rounded-lg">
+                    <label for="Dob" id="Dob" class="py-3">Date of birth</label>
+                    <input type="date" name="Dob" id="Dob" class="rounded-lg">
+                    <label for="father" id="father" class="py-3">Father Name</label>
+                    <input type="text" name="father" id="firstname" class="rounded-lg">
+                    <label for="mother" id="mother" class="py-3">Mother Name</label>
+                    <input type="text" name="mother" id="mother" class="rounded-lg">
+                    <label for="Rollno" id="Rollno" name="Rollno" class="py-3">Roll No</label>
+                    <input type="text" name="Rollno" id="Rollno" class="rounded-lg">
+                    <label for="email" id="email" name="email" class="py-3">Email</label>
+                    <input type="email" name="email" id="email" class="rounded-lg">
+                    <label for="phno" id="phno" class="py-3">Phone Number</label>
+                    <input type="number" name="phno" id="phno" class="rounded-lg">
+                    <div class=""><label for="gender" id="gender" class="py-3 flex flex-col">Gender</label>
+                        <input type="radio" name="gender" id="gender" class="px-3">Male
+                        <input type="radio" name="gender" id="gender" class="px-3">Female
+                        <input type="radio" name="gender" id="gender" class="px-3">Other
+                    </div>
+                    <label for="branch" id="branch" class="py-3">branch</label>
+                    <input type="text" id="branch" class="rounded-lg">
+                    <label for="year" id="year" class="py-3">Year</label>
+                    <input type="number" id="year" class="rounded-lg">
+                    <label for="clgcode" id="clgcode" class="py-3">College Code</label>
+                    <input type="text" id="clgcode" class="rounded-lg">
+                    <div class="flex flex-row py-10">
+                        <input type="checkbox" name="instructions" id="instructions" checked >
+                        <label for="instructions" class="px-3">here by i understand the above given data is correct to my knowlege and i
+                            will accept any nessesary consequences if the data present data to be found untruthful</label>
+                    </div>
+                    <div class="py-10"><input type="submit" value="submit" class="bg-green-200 w-32 flex items-center justify-center mx-auto py-2 rounded-lg hover:bg-green-400 "></div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
