@@ -15,13 +15,13 @@
                 <span class="flex text-center justify-center mx-auto text-3xl py-3">Registration Form</span>
                 <form action="/create" method="post" class="flex flex-col py-10">
                     <label for="Firstname" id="Firstname" class="py-3">First Name</label>
-                    <input type="text" name="Firstname" id="firstname" class="rounded-lg">
+                    <input type="text" name="Firstname" id="Firstname" class="rounded-lg">
                     <label for="lastname" id="lastname" class="py-3">Last Name</label>
                     <input type="text" name="lastname" id="lastname" class="rounded-lg">
-                    <label for="Dob" id="Dob" class="py-3">Date of birth</label>
+                    <label for="Dob" id="Dob" class="py-3">Date of birth (dd/mm/yy)</label>
                     <input type="date" name="Dob" id="Dob" class="rounded-lg">
                     <label for="father" id="father" class="py-3">Father Name</label>
-                    <input type="text" name="father" id="firstname" class="rounded-lg">
+                    <input type="datetime" name="father" id="father" class="rounded-lg">
                     <label for="mother" id="mother" class="py-3">Mother Name</label>
                     <input type="text" name="mother" id="mother" class="rounded-lg">
                     <label for="Rollno" id="Rollno" name="Rollno" class="py-3">Roll No</label>
@@ -31,9 +31,9 @@
                     <label for="phno" id="phno" class="py-3">Phone Number</label>
                     <input type="number" name="phno" id="phno" class="rounded-lg">
                     <div class=""><label for="gender" id="gender" class="py-3 flex flex-col">Gender</label>
-                        <input type="radio" name="gender" id="gender" class="px-3">Male
-                        <input type="radio" name="gender" id="gender" class="px-3">Female
-                        <input type="radio" name="gender" id="gender" class="px-3">Other
+                        <input type="radio" name="gender" id="gender1" value="Male>" class="px-3">Male
+                        <input type="radio" name="gender" id="gender2" class="px-3" value="Female">Female
+                        <input type="radio" name="gender" id="gender3" class="px-3" value="Other">Other
                     </div>
                     <label for="branch" id="branch" class="py-3">branch</label>
                     <input type="text" id="branch" class="rounded-lg">
